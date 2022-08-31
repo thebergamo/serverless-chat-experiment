@@ -1,0 +1,27 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "Simple chat using serverless stack without websockets",
+  "main": "main.ts",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thebergamo/serverless-chat-experiment.git"
+  },
+  "keywords": [
+    "serverless",
+    "chat"
+  ],
+  "author": "Marcos Bérgamo <marcos@thedon.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thebergamo/serverless-chat-experiment/issues"
+  },
+  "homepage": "https://github.com/thebergamo/serverless-chat-experiment#readme",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.102",
+    "esbuild": "^0.15.5"
+  }
+}
