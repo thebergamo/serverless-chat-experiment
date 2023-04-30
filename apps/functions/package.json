@@ -1,27 +1,27 @@
 {
   "name": "functions",
-  "version": "1.0.0",
-  "description": "Simple chat using serverless stack without websockets",
-  "main": "main.ts",
+  "version": "0.1.0",
+  "bin": {
+    "functions": "bin/functions.js"
+  },
   "scripts": {
-    "test": "make test"
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thebergamo/serverless-chat-experiment.git"
-  },
-  "keywords": [
-    "serverless",
-    "chat"
-  ],
-  "author": "Marcos Bérgamo <marcos@thedon.com.br>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/thebergamo/serverless-chat-experiment/issues"
-  },
-  "homepage": "https://github.com/thebergamo/serverless-chat-experiment#readme",
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.102",
-    "esbuild": "^0.15.5"
+    "aws-cdk": "2.42.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "10.17.27",
+    "@types/prettier": "2.6.0",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.9.1",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.42.0",
+    "constructs": "^10.0.0"
   }
 }

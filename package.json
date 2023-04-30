@@ -2,10 +2,7 @@
   "name": "serverless-chat-experiment",
   "version": "1.0.0",
   "description": "Simple chat using serverless stack without websockets",
-  "main": "main.ts",
-  "scripts": {
-    "test": "make test"
-  },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thebergamo/serverless-chat-experiment.git"
@@ -20,7 +17,12 @@
     "url": "https://github.com/thebergamo/serverless-chat-experiment/issues"
   },
   "homepage": "https://github.com/thebergamo/serverless-chat-experiment#readme",
+  "dependencies": {
+    "prettier": "^2.7.1"
+  },
   "devDependencies": {
-    "esbuild": "^0.15.5"
+    "aws-cdk": "^2.42.0",
+    "aws-cdk-local": "^2.15.0",
+    "typescript": "^4.6.4"
   }
 }
